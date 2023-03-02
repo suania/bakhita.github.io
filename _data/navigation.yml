@@ -17,12 +17,13 @@ en: &DEFAULT_EN
       section: portfolio
     - title: "Story"
       section: timeline
-    - title: "Team"
+    - title: "Saints"
       section: team
-    - title: "Contact"
+   - title: "Testimonials"
+      section: testimonial 
+   - title: "Contact"
       section: contact
-    - title: "Theme Source"
-      url: https://github.com/raviriley/agency-jekyll-theme/
+    
 en-US:
   <<: *DEFAULT_EN
 en-CA:
