@@ -5,27 +5,27 @@
 # locale: "en-US"  [YOUR PREFERRED LOCALE]
 #
 # How to use:
-# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+ #{{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
 
 # English (default)
 # -----------------
-en: &DEFAULT_EN
+ en: &DEFAULT_EN
   header:
     title: Welcome to the Club!
    # text: It's Nice To Meet You
     #button: Tell Me More
     #buttonlink: "#services"
 
-  services:
+  prayers:
     title: "Prayers"
     text: "Prayers and quotes"
-    section: services
+    section: prayers
     list:
       - title: "Prayer to Saint Josephine Bakhita"
         desc: "O God, Father of mercy, you gave us Saint Josephine Bakhita this universal sister,
          evangelical model of simple faith and charity, give us also the will to grow and to love according to the Gospel.
          <br>Hear the prayers of all those who invoke his intercession.<br>
-Give us the grace of a merciful heart like his, a heart capable of forgiving even those who have harmed us, a heart capable of overcoming evil with the mighty force of good. Amen."
+     Give us the grace of a merciful heart like his, a heart capable of forgiving even those who have harmed us, a heart capable of overcoming evil with the mighty force of good. Amen."
         icon: fas fa-cross #find more at https://fontawesome.com/icons
       - title: "Novenas"
         desc: "Du 31 Janvier au 8 Février <<_**Possible de la faire à n'importe quel moment de l'année**_>> 
@@ -49,39 +49,39 @@ Give us the grace of a merciful heart like his, a heart capable of forgiving eve
         I didn't die, because the Good GOD had destined me for better things >>*"
         icon: fab fa-list
 
-  portfolio:
+  photos:
     title: "Portfolio"
     text: "Lorem ipsum dolor sit amet consectetur."
-    section: portfolio
+    section: photos
     closebutton: "Close Project"
 
-  timeline:
+  story:
     title: "Story"
     text: "Her Story with dates"
-    section: timeline
+    section: story
     # left is the default
     #start_align: "left"
     events:
-     - title: "Her Childhood"
+      - title: "Her Childhood"
         year: "1869-1876"
         desc: "Born in 1869 without further details, her birth name is unknown to this day!
         In 1874, when she was five years old, her mother decided to go to the fields, leaving her with her older sister. The village was attacked by slave traders
         came to fly. The raiders take her older sister away while she is saved by a good hiding place.<br>It was a terrible grief.
         In 1876 She was kidnapped and sold to a slave trader. After an unsuccessful escape attempt with Dinah
-        , it is sold to an Arab emissary dependent on a rich slaver residing in El Obeid.       
-      "
+        , it is sold to an Arab emissary dependent on a rich slaver residing in El Obeid."
         image: assets/img/timeline/1.jpg
         alt:
+        align: left
       - title: "Slavery"
         year: "1876-1887"
         desc: " Until 1878 she will be in the service of the slaveholder's two daughters. It will be sold to a Turkish general still in El Obeid.
         Travels with the general's family to khartoum and is sold a fourth time to an Italian consul Callisto Legnani.<br> Mid-March
-         1885
-        they leave for Italy (Legnani) taking Bakhita with them. Arrived in April in Genoa this will be given as a gift to the couple Auguste and Turina Michieli
+         1885  they leave for Italy (Legnani) taking Bakhita with them. Arrived in April in Genoa this will be given as a gift to the couple Auguste and Turina Michieli
          living in Zianigo part of the municipality of Mirano in the province of Veneto. Since 1886,
-          at the birth of their daughter Alice Michieli Bakhita will take on the role of nanny."
+         at the birth of their daughter Alice Michieli Bakhita will take on the role of nanny."
         image: assets/img/timeline/2.jpg
         alt:
+        align: right
       - title: "Path to Christianity"
         year: "1888 - 1890"
         desc: "On November 28, Alicia joined an institute run by the Canossians and Bakhita was accepted as a catechumen for free.
@@ -112,7 +112,7 @@ Give us the grace of a merciful heart like his, a heart capable of forgiving eve
           but managed to get out."
         image: assets/img/timeline/4.jpg
         alt:
-         align: right
+        align: right
       - title: "Death of the **Moretta** "
         year: "1947"
         desc: "After suffering with heroic patience and joyful serenity an illness that made his breathing difficult and
@@ -124,17 +124,17 @@ Give us the grace of a merciful heart like his, a heart capable of forgiving eve
         # you can enforce the alignment
         align: left
     end: "1/10/2000, Elle est canonisée par <br> St Jean Paul 2 <br> "
-  about:
-    title: "About Us"
-    text: "our story"
-    section: about
+      # about:
+      #  title: "About Us"
+      #   text: "our story"
+       #   section: about
 
-  clients:
-    section: clients
+  testimonials:
+    section: testimonials
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
     list:
-      - title: "envato"
+      - title: "Testimonials"
         url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/envato.jpg
       - title: "designmodo"
@@ -146,12 +146,12 @@ Give us the grace of a merciful heart like his, a heart capable of forgiving eve
       - title: "Creative Market"
         url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/creative-market.jpg
-
-  team:
-    title: "OUR AMAZING TEAM"
+ 
+  saints:
+    title: "Saints"
     text: "Lorem ipsum dolor sit amet consectetur."
     subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
-    section: team
+    section: saints
     people:
       - name: "Kay Garland"
         role: "Lead Designer"
@@ -184,10 +184,10 @@ Give us the grace of a merciful heart like his, a heart capable of forgiving eve
           - url: https://linkedin.com
             icon: fab fa-linkedin-in
 
-  contact:
-    title: "Contact Us"
+  contacts:
+    title: "Contacts"
     text: "Lorem ipsum or call 123456789"
-    section: contact
+    section: contacts
     name: "Name*"
     name-validation: "Please enter your name."
     email: "Email*"
@@ -227,22 +227,22 @@ en-AU:
 # French 
 # -----------------
 fr: &DEFAULT_FR
-  header:
+   header:
     title: Bienvenue dans le club!
     #text: Un plaisir de vous avoir
     #button: Plus d'infos
     #buttonlink: "#services"
 
-  services:
+  service:
     title: "Prières"
     text: "Prières et citations"
-    section: services
+    section: service
     list:
       - title: "Prière à Sainte Joséphine Bakhita"
         desc: "O Dieu, Père de miséricorde, tu nous as donné sainte Joséphine Bakhita cette sœur universelle,
          modèle évangélique de foi simple et de charité, donne-nous aussi la volonté de grandir et d’aimer selon l’Evangile. 
          <br>Exauce les Prières de toutes les personnes qui invoquent son intercession.<br>
-Donne-nous la grâce d’un cœur miséricordieux comme le sien, cœur capable de pardonner même à ceux qui nous ont fait du mal, cœur capable de vaincre le mal avec la puissante force du bien. Amen."
+         Donne-nous la grâce d’un cœur miséricordieux comme le sien, cœur capable de pardonner même à ceux qui nous ont fait du mal, cœur capable de vaincre le mal avec la puissante force du bien. Amen."
         icon: fas fa-cross #find more at https://fontawesome.com/icons
       - title: "Neuvaines à Sainte Joséphine"
         desc: "Du 31 Janvier au 8 Février <<_**Possible de la faire à n'importe quel moment de l'année**_>> 
@@ -279,17 +279,14 @@ Donne-nous la grâce d’un cœur miséricordieux comme le sien, cœur capable d
     title: "Histoire"
     text: "Son Histoire avec des dates"
     section: timeline
-    # left is the default
-    #start_align: "left"
-    events:
+        events:
       - title: "Son Enfance"
         year: "1869-1876"
         desc: "Née en 1869 sans plus de précision, son nom de naissance est ignoré jusqu'à ce jour! 
         En 1874 alors agée de cinq ans, sa mère décide d'aller aux champs la laissant avec sa soeur ainée. Le village fut attaqué par des négriers
         venu voler. Les pillars emmènent sa soeur ainée tandis qu'elle a la vie sauve grâce à une bonne cachette.<br> Ce fut un terrible chagrin.
         En 1876 Elle est enlevée et vendue à un marchand d'esclaves. Après une tentative d'évasion infructueuse avec Dinah
-        , elle est revendue à un émissaire arabe dépendant d'un riche esclavagiste résidant à El Obeid.       
-      "
+        , elle est revendue à un émissaire arabe dépendant d'un riche esclavagiste résidant à El Obeid. "
         image: assets/img/timeline/1.jpg
         alt:
       - title: "L'Esclavage"
@@ -345,35 +342,35 @@ Donne-nous la grâce d’un cœur miséricordieux comme le sien, cœur capable d
         align: left
     end: "1/10/2000, Elle est canonisée par <br> St Jean Paul 2 <br> "
 
-  about:
-    title: "Son histoire"
-    text: "Son parcours"
-    section: Son histoire
+   about:
+     title: "Son histoire"
+     text: "Son parcours"
+     section: about
 
   #clients:
- #   section: clients
-  #  max-height: 100px
-  #  horizontal-scrolling: "" #"yes/no"
-  #  list:
-  #    - title: "envato"
-  #      url: https://github.com/raviriley/agency-jekyll-theme
-  #      logo: assets/img/clients/envato.jpg
-  #    - title: "designmodo"
-  #      url: https://github.com/raviriley/agency-jekyll-theme
-  #      logo: assets/img/clients/designmodo.jpg
-  #    - title: "themeforest"
-  #      url: https://github.com/raviriley/agency-jekyll-theme
-  #      logo: assets/img/clients/themeforest.jpg
-  #    - title: "Creative Market"
-  #      url: https://github.com/raviriley/agency-jekyll-theme
-  #      logo: assets/img/clients/creative-market.jpg
+    #   section: clients
+    #  max-height: 100px
+    #  horizontal-scrolling: "" #"yes/no"
+    #  list:
+    #    - title: "envato"
+    #      url: https://github.com/raviriley/agency-jekyll-theme
+    #      logo: assets/img/clients/envato.jpg
+    #    - title: "designmodo"
+    #      url: https://github.com/raviriley/agency-jekyll-theme
+      #      logo: assets/img/clients/designmodo.jpg
+    #    - title: "themeforest"
+     #      url: https://github.com/raviriley/agency-jekyll-theme
+    #      logo: assets/img/clients/themeforest.jpg
+    #    - title: "Creative Market"
+     #      url: https://github.com/raviriley/agency-jekyll-theme
+     #       logo: assets/img/clients/creative-market.jpg
 
-  team:
-    title: "Quelques Saints"
-    text: "Avec lesquels Elle a un certain lien"
-    #subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
-    section: team
-    people:
+   team:
+     title: "Quelques Saints"
+     text: "Avec lesquels Elle a un certain lien"
+     #subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+     section: team
+     people:
       - name: "Sainte Thérèse de Lisieux"
         role: "Carmélite et Docteur de l'Eglise Catholique"
         image: assets/img/team/STL.jpg
@@ -396,7 +393,7 @@ Donne-nous la grâce d’un cœur miséricordieux comme le sien, cœur capable d
             style: color:yellow
            
 
-temoignage:
+  temoignage:
     title: "Quelques Saints"
     text: "Avec lesquels Elle a un certain lien"
     #subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.

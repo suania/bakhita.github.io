@@ -9,21 +9,22 @@
 
 # English (default)
 # -----------------
+
+
 en: &DEFAULT_EN
   nav:
     - title: "Prayers"
-      section: services
+      section: prayers
     - title: "Portfolio"   
-      section: portfolio
+      section: photos
     - title: "Story"
-      section: timeline
+      section: story
     - title: "Saints"
-      section: team
-   - title: "Testimonials"
-      section: testimonial 
-   - title: "Contact"
-      section: contact
-    
+      section: saints
+    - title: "Testimonials"
+      section: testimonials 
+    - title: "Contacts"
+      section: contacts    
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -40,9 +41,9 @@ en-AU:
 # French
 # -----------------
 fr: &DEFAULT_FR
-  nav:
+   nav:
     - title: "Prières"
-      section: services
+      section: service
     - title: "Portfolio"
       section: portfolio
     - title: "Histoire"

@@ -46,7 +46,7 @@ analytics:
 
 lsi: false
 safe: true
-source: suania/bakhita.github.io
+#source: /
 incremental: false
 highlighter: rouge
 gist:
