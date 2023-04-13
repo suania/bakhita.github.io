@@ -2,29 +2,27 @@
 # Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
 #
 # Configuration: Add to _config.yml
-# locale: "fr-FR"  [YOUR PREFERRED LOCALE]
+ locale: "fr-FR" # [YOUR PREFERRED LOCALE]
 #
 # How to use:
 # {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
 
 # English (default)
 # -----------------
-
-
 en: &DEFAULT_EN
   nav:
-    - title: "Prayers"
-      section: prayers
-    - title: "Portfolio"   
-      section: photos
-    - title: "Story"
-      section: story
-    - title: "Saints"
-      section: saints
-    - title: "Testimonials"
-      section: testimonials 
-    - title: "Contacts"
-      section: contacts    
+    - title: "Services"
+      section: services
+    - title: "Portfolio"
+      section: portfolio
+    - title: "About"
+      section: timeline
+    - title: "Team"
+      section: team
+    - title: "Contact"
+      section: contact
+    - title: "Theme Source"
+      url: https://github.com/raviriley/agency-jekyll-theme/
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -34,31 +32,24 @@ en-GB:
 en-AU:
   <<: *DEFAULT_EN
 
-
-
-
-
-# French
-# -----------------
+# French 
+# -------
 fr: &DEFAULT_FR
-   nav:
-    - title: "Prières"
-      section: service
-    - title: "Portfolio"
-      section: portfolio
+  nav:
+    - title: "Services"
+      section: services
+    - title: "Portafolio"
+      section: portafolio
     - title: "Histoire"
-      section: timeline
+      section: histoire
     - title: "Saints"
-      section: team
-    - title: "Contact"
-      section: contact
-    - title: "Témoignages"
-      section: temoignage
-   
+      section: saints
+    - title: "Contacts"
+      section: contacts
+
 fr-FR:
   <<: *DEFAULT_FR
 fr-BE:
   <<: *DEFAULT_FR
 fr-CH:
   <<: *DEFAULT_FR
-
