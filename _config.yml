@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+#title: Your awesome title
+#email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -53,3 +53,64 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# Site settings
+title: Club Ste Joséphine Bakhita
+email: suaniasuanial@gmail.com
+#description: "W"
+
+
+# Team names, titles and social links
+people:
+- name: Ste Thérèse de Lisieux 
+  pic: 6
+  position: Carmélite et Docteur de l'Eglise Catholique
+  social:
+    - title: wikipedia-w
+      url:  https://fr.wikipedia.org/wiki/Th%C3%A9r%C3%A8se_de_Lisieux
+    #- title: facebook
+      #url: #
+    #- title: stack-overflow
+      #url: #
+
+- name: St Josémaria Escriba 
+  pic: 4
+  position: Fondateur de l'Opus DEI
+  social:
+    - title: firefox
+      url:  https://opusdei.org/fr/saint-josemaria/
+    #- title: facebook
+     # url: #
+    #- title: linkedin
+     # url: #
+
+- name: St Jean Paul II
+  pic: 5
+  position: le Pape des Familles Chrétiennes
+  social:
+    - title: wikipedia-w
+      url: https://fr.wikipedia.org/wiki/Jean-Paul_II
+    #- title: facebook
+     # url: #
+    #- title: google-plus
+      #url: #
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+   #- title: twitter
+     #url: http://twitter.com/jekyllrb
+   #- title: facebook
+     #url:
+   #- title: stack-overflow
+     #url: http://stackoverflow.com/questions/tagged/jekyll
+   #- title: bitbucket 
+     #url: http://bitbucket.org/jekyll
+   #- title: github
+     #url: http://github.com/jekyll
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+# Build settings
+markdown: kramdown
+permalink: pretty
